@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artificial Knowledge</title>
+  <style>
+    /* Reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Header styles */
+    header {
+      background-color: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 15px;
+      color: #ecf0f1;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover {
+      background-color: #2c3e50;
+    }
+    /* Main content styles */
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    /* Footer styles */
+    footer {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      padding: 30px 20px;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .footer-column {
+      flex: 1 1 200px;
+      margin: 10px;
+    }
+    .footer-column h3 {
+      margin-bottom: 15px;
+    }
+    .footer-column ul {
+      list-style: none;
+    }
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    .footer-column ul li a {
+      color: #ecf0f1;
+      transition: color 0.3s;
+    }
+    .footer-column ul li a:hover {
+      color: #bdc3c7;
+    }
+    /* Responsive design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Artificial Knowledge</h1>
+    <p>Empowering Minds with News, Education, Health, and Technology</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#news">News</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#health">Health</a></li>
+      <li><a href="#tech">Tech</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="news">
+      <h2>Latest News</h2>
+      <div class="card">
+        <h3>AI Breakthrough in Language Processing</h3>
+        <p>Researchers have developed a new AI model that surpasses previous benchmarks in natural language understanding.</p>
+      </div>
+      <!-- Add more news cards as needed -->
+    </section>
+    <section id="education">
+      <h2>Education Insights</h2>
+      <div class="card">
+        <h3>Online Learning Trends in 2025</h3>
+        <p>With the rise of virtual classrooms, educators are adapting to new technologies to enhance learning experiences.</p>
+      </div>
+      <!-- Add more education cards as needed -->
+    </section>
+    <section id="health">
+      <h2>Health Updates</h2>
+      <div class="card">
+        <h3>Advancements in Telemedicine</h3>
+        <p>Telemedicine continues to grow, providing remote healthcare solutions to patients worldwide.</p>
+      </div>
+      <!-- Add more health cards as needed -->
+    </section>
+    <section id="tech">
+      <h2>Technology Developments</h2>
+      <div class="card">
+        <h3>Quantum Computing Milestones</h3>
+        <p>Tech companies announce significant progress in quantum computing, promising faster processing speeds.</p>
+      </div>
+      <!-- Add more tech cards as needed -->
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About</h3>
+        <ul>
+          <li><a href="#about">Our Mission</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#careers">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms & Conditions</a></li>
+          <li><a href="#disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 20px;">&copy; 2025 Artificial Knowledge. All rights reserved.</p>
+  </footer>
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
